@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Website - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Welcome to the Ultimate Sports Website!</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="upcoming-games.html">Upcoming Games</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <main>
+        <section>
+            <h2>Featured Sports</h2>
+            <p>Explore a wide range of sports from football to basketball and more! Stay updated on your favorite teams and athletes, and get the latest news on major sports events.</p>
+            <p><strong>Football</strong> is the world’s most popular sport, while <em>basketball</em> continues to grow globally. Whether it's the <u>FIFA World Cup</u> or the NBA Finals, sports unite people worldwide.</p>
+        </section>
+
+        <section>
+            <h2>Why Choose Us?</h2>
+            <ul>
+                <li>Get the latest sports news and scores</li>
+                <li>Stay updated on upcoming games and events</li>
+                <li>Access in-depth analysis of top athletes and teams</li>
+            </ul>
+        </section>
+    </main>
+
+    
+    <footer>
+        <p>&copy; 2025 Sports Enthusiast. All rights reserved. | <a href="contact.html">Contact Us</a></p>
+    </footer>
+</body>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Click Interaction</title>
+</head>
+<body>
+
+<button id="showMessageButton">Click me to see the message!</button>
+<p id="message" style="display:none;">Hello, this is your hidden message!</p>
+
+<script>
+  // When the button is clicked, the hidden message will appear
+  document.getElementById("showMessageButton").addEventListener("click", function() {
+    document.getElementById("message").style.display = "block";
+  });
+</script>
+
+</body>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Interaction</title>
+    <style>
+        #hoverButton {
+            padding: 10px 20px;
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<button id="hoverButton">Hover over me!</button>
+
+<script>
+  const button = document.getElementById("hoverButton");
+
+  // Change background color when mouse enters
+  button.addEventListener("mouseenter", function() {
+    button.style.backgroundColor = "green";
+  });
+
+  // Revert background color when mouse leaves
+  button.addEventListener("mouseleave", function() {
+    button.style.backgroundColor = "blue";
+  });
+</script>
+
+</body>
+</html>
+
+<body>
+
+    <h1>Image from an External Source</h1>
+    
+    <!-- Adding an image from a URL -->
+    <img src="https://bleacherreport.com/articles/741676-the-100-most-beloved-athletes-in-sports-history" alt="A description of the image" width="500" height="300">
+    
+    </body>
+    </html>
