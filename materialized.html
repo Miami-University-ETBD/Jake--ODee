@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sports Central</title>
+  <!-- Materialize CSS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    body {
+      background-color: #f3f3f3;
+    }
+    .carousel {
+      margin-top: 30px;
+    }
+    .section-title {
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="blue darken-3">
+    <div class="nav-wrapper container">
+      <a href="#" class="brand-logo">Sports Central</a>
+    </div>
+  </nav>
+
+  <!-- Carousel: Highlight Reel -->
+  <div class="container">
+    <h4 class="section-title center-align">Top Highlights</h4>
+    <div class="carousel carousel-slider center">
+      <div class="carousel-item red white-text" href="#one!">
+        <h5>🏀 Slam Dunk Showdown</h5>
+        <p class="white-text">Watch last night’s epic dunk contest!</p>
+      </div>
+      <div class="carousel-item blue white-text" href="#two!">
+        <h5>⚽️ Goal of the Month</h5>
+        <p class="white-text">An incredible shot from midfield!</p>
+      </div>
+      <div class="carousel-item green white-text" href="#three!">
+        <h5>🏈 Game-Winning Drive</h5>
+        <p class="white-text">Relive the final minute comeback.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Collapsible: Sports News -->
+  <div class="container">
+    <h4 class="section-title center-align">Latest News</h4>
+    <ul class="collapsible popout">
+      <li>
+        <div class="collapsible-header"><i class="material-icons">sports_basketball</i>NBA Playoff Picture</div>
+        <div class="collapsible-body"><span>The seeding is heating up as teams fight for the last spots.</span></div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">sports_football</i>NFL Draft Recap</div>
+        <div class="collapsible-body"><span>Top picks and surprise trades from this year's draft.</span></div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">sports_soccer</i>MLS Midseason Stats</div>
+        <div class="collapsible-body"><span>Who's dominating the field and leading the league?</span></div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Materialize JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <!-- Custom Initialization -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Initialize Carousel
+      const carouselElems = document.querySelectorAll('.carousel');
+      M.Carousel.init(carouselElems, {
+        fullWidth: true,
+        indicators: true,
+        duration: 400
+      });
+
+      // Initialize Collapsible
+      const collapsibleElems = document.querySelectorAll('.collapsible');
+      M.Collapsible.init(collapsibleElems, {
+        accordion: false // Allows multiple sections to be open
+      });
+    });
+  </script>
+
+</body>
+</html>
