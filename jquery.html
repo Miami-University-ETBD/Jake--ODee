@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").fadeIn();
+    $("#div2").fadeIn("slow");
+    $("#div3").fadeIn(3000);
+  });
+});
+</script>
+</head>
+<body>
+
+<p>Demonstrate fadeIn() with different parameters.</p>
+
+<button>Click to fade in boxes</button><br><br>
+
+<div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+<div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
+<div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
+
+</body>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $("div").first().css("background-color", "yellow");
+    });
+    </script>
+    </head>
+    <body>
+    
+    <h1>Welcome to My Homepage</h1>
+    <nav>
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="upcoming-games.html">Upcoming Games</a></li>
+          <li><a href="Materialized.html">Sports Central</a></li>
+          <li><a href="JQuery.html">United States Sports</a></li>
+          <li><a href="Bootstrap.html">Help Center</a></li>
+      </ul>
+  </nav>
+    <p>This is a paragraph.</p>
+    
+    <div style="border: 1px solid black;">
+      <p>A paragraph in a div.</p>
+      <p>Another paragraph in a div.</p>
+    </div>
+    <br>
+    
+    <div style="border: 1px solid black;">
+      <p>A paragraph in another div.</p>
+      <p>Another paragraph in another div.</p>
+    </div>
+    <br>
+    
+    <div style="border: 1px solid black;">
+      <p>A paragraph in another div.</p>
+      <p>Another paragraph in another div.</p>
+    </div>
+    
+    </body>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+          $("#hide").click(function(){
+            $("p").hide();
+          });
+          $("#show").click(function(){
+            $("p").show();
+          });
+        });
+        </script>
+        </head>
+        <body>
+        
+        <p>If you click on the "Hide" button, I will disappear.</p>
+        
+        <button id="hide">Hide</button>
+        <button id="show">Show</button>
+        
+        </body>
+        </html>
