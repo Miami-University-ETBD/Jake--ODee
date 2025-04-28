@@ -1,88 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  $("button").click(function(){
-    $("#div1").fadeIn();
-    $("#div2").fadeIn("slow");
-    $("#div3").fadeIn(3000);
-  });
-});
-</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>United States Sports</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<p>Demonstrate fadeIn() with different parameters.</p>
+    <header>
+        <h1>Welcome to United States Sports!</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="upcoming-games.html">Upcoming Games</a></li>
+                <li><a href="Materialized.html">Sports Central</a></li>
+                <li><a href="JQuery.html">United States Sports</a></li>
+                <li><a href="Bootstrap.html">Help Center</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<button>Click to fade in boxes</button><br><br>
+    <main>
+        <section>
+            <h2>Sports in the United States</h2>
+            <p>The United States is home to a wide variety of sports, including American football, basketball, baseball, and hockey. Here, we’ll explore the history and cultural significance of these sports, along with the current top teams and athletes.</p>
+            
+            <p><strong>Football</strong> holds a special place in American culture, with the <em>Super Bowl</em> being one of the most-watched sporting events worldwide. <strong>Basketball</strong> also enjoys massive popularity, especially with the <u>NBA Finals</u>.</p>
+        </section>
 
-<div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
-<div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
-<div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
+        <section>
+            <h2>Top U.S. Sports Teams</h2>
+            <ul>
+                <li><strong>New England Patriots</strong> - NFL Champions</li>
+                <li><strong>Los Angeles Lakers</strong> - NBA Champions</li>
+                <li><strong>New York Yankees</strong> - MLB Champions</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Interactive Fun!</h2>
+            <button id="showMessageButton">Click me to see a fun fact!</button>
+            <p id="message" style="display:none;">Did you know that baseball was invented in the 1800s!</p>
+        </section>
+
+        <section>
+            <h2>Hover Interaction</h2>
+            <button id="hoverButton">Hover over me!</button>
+        </section>
+
+        <section>
+            <h2>Featured Image</h2>
+            <img src="https://bleacherreport.com/articles/741676-the-100-most-beloved-athletes-in-sports-history" alt="Athletes" width="500" height="300">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sports Enthusiast. All rights reserved. | <a href="contact.html">Contact Us</a></p>
+    </footer>
+
+    <script>
+        // Button click interaction to show the hidden message
+        document.getElementById("showMessageButton").addEventListener("click", function() {
+            document.getElementById("message").style.display = "block";
+        });
+
+        // Hover interaction to change button color
+        const button = document.getElementById("hoverButton");
+        button.addEventListener("mouseenter", function() {
+            button.style.backgroundColor = "green";
+        });
+
+        button.addEventListener("mouseleave", function() {
+            button.style.backgroundColor = "blue";
+        });
+    </script>
 
 </body>
-<head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script>
-    $(document).ready(function(){
-      $("div").first().css("background-color", "yellow");
-    });
-    </script>
-    </head>
-    <body>
-    
-    <h1>Welcome to My Homepage</h1>
-    <nav>
-      <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="upcoming-games.html">Upcoming Games</a></li>
-          <li><a href="Materialized.html">Sports Central</a></li>
-          <li><a href="JQuery.html">United States Sports</a></li>
-          <li><a href="Bootstrap.html">Help Center</a></li>
-      </ul>
-  </nav>
-    <p>This is a paragraph.</p>
-    
-    <div style="border: 1px solid black;">
-      <p>A paragraph in a div.</p>
-      <p>Another paragraph in a div.</p>
-    </div>
-    <br>
-    
-    <div style="border: 1px solid black;">
-      <p>A paragraph in another div.</p>
-      <p>Another paragraph in another div.</p>
-    </div>
-    <br>
-    
-    <div style="border: 1px solid black;">
-      <p>A paragraph in another div.</p>
-      <p>Another paragraph in another div.</p>
-    </div>
-    
-    </body>
-    <head>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script>
-        $(document).ready(function(){
-          $("#hide").click(function(){
-            $("p").hide();
-          });
-          $("#show").click(function(){
-            $("p").show();
-          });
-        });
-        </script>
-        </head>
-        <body>
-        
-        <p>If you click on the "Hide" button, I will disappear.</p>
-        
-        <button id="hide">Hide</button>
-        <button id="show">Show</button>
-        
-        </body>
-        </html>
+</html>
